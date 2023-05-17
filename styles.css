@@ -64,11 +64,12 @@
         color: #fff;
     }
     /* Main */
-    main h2,h3,p {
-        padding: 20px 30px 0px 30px ;
+    main h1,h2,h3,p {
+        padding: 20px 30px 0px 20px ;
+        margin: 10px 0 50px 0;
     }
 
-    main h2{
+    main h2,h1{
         font-family: Arial, Helvetica, sans-serif;
         color: #9ed034;
         margin-bottom: 50px;
@@ -76,10 +77,7 @@
     main h3{
         font-family: Arial, Helvetica, sans-serif;
     }
-    main p{
-        margin: 10px 0 50px 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    
     /*Partner*/
 
     section{
@@ -205,3 +203,67 @@
         font-weight: bold;
         background-color: #bde1ff;
     }
+    .contactinfo{
+        padding: 0px 30px 0px 20px ;
+        margin: 0px 0 50px 0;
+    }
+    span:first-child{
+        font-weight: bold;
+    }
+    form{
+        padding: 0px 30px 30px 15px ;
+        
+    }
+    fieldset{
+        border: solid 1px #9ed034;
+    }
+
+    legend{
+        color: #4977D1;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .textbox label{
+        display: block;
+        margin: 15px 0 0 0;
+        font-weight: bold;
+
+    }
+    input{
+        width: 500px;
+    }
+    .radios {
+        display: block;
+        margin: 15px 0 0 0;        
+    }
+
+    .selectmenu {
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    input[type="radio"]{
+        width: 25px;
+    }
+    select{
+        width: 150px;
+        text-align: center;
+    }
+
+    .commentbox label{
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    textarea{
+        width: 500px;
+        height: 200px;
+    }
+    input[type="submit"]{
+        display:block;
+        margin: 15px 0 25px 400px;
+        width: 100px;
+        align-content: right;
+        background-color: #4977D1;
+        color: #fff;
+
+    }
+
