@@ -10,6 +10,10 @@
         background:no-repeat lightgrey url(content/images.d2/cliff_ocean.jpg);
         background-size: 1500px;
     }
+    #cliff header{
+        background:no-repeat lightgrey url(content/images.d2/cliff_ocean.jpg);
+        background-size: 1500px;
+    }
     #activities header{
         background: no-repeat lightgrey url(content/images.d2/runfly.jpg);
         background-size: 1500px;
