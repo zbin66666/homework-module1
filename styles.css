@@ -42,7 +42,6 @@
     }
     .main-menu ul li{
         list-style-type: none;
-        display:inline-block;
         float: left;
         padding-left: 25px;
         padding-right: 25px;
@@ -164,6 +163,38 @@
         background:#55Acee;
         color: white
     }
+    /* Cliff */
+    
+    .cliffs {
+        margin: 20px 0px 20px 0x;
+        padding: 100px 300px 100px 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+
+
+    }
+    .fourcliffs{
+        width: 400px;
+        height: 230px;
+        display: inline-block;
+        margin-right: 22px;
+        margin-left: 22px;
+        margin-top: 25px;
+        object-fit:none;
+        background-color: #852b1b;
+        transition: transform .2s;
+    }
+    .direction {
+        color:#fff;
+        margin-top: 10px;
+    }
+    .cliffview {
+        max-width: 400px;
+        max-height: 220px;
+        margin-top: 20px;
+    }
+
+
 
     /*Activities*/
 
