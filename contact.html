@@ -84,7 +84,7 @@
         
                 <section>
                     <ul id="partners">
-                        <li class="partner">
+                        <!--<li class="partner">
                             <img src="content/partners/partner-bustour.png" alt="Partner Bus Tour">
                         </li>
                         <li class="partner">
@@ -101,28 +101,48 @@
                         </li>
                         <li class="partner">
                             <img src="content/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                        </li>
+                        </li>-->
                     </ul>  
                 </section>
             </main>
 
         </div>
 
-    </body>
-    <footer>
-        <div id="nondisclaimer">
-            <div class="copy">&copy; Copyright 2023:: GreatCliffs.com</div>
-            <div class="social">
-                <h3>Facebook Image</h3>
-                <h3>Instagram Image</h3>
-                <h3>Twitter Image</h3>
-            </div>
+    
+        <footer>
+            <div id="nondisclaimer">
+                <div class="copy">&copy; Copyright 2023:: GreatCliffs.com</div>
+                <div class="social">
+                    <h3>Facebook Image</h3>
+                    <h3>Instagram Image</h3>
+                    <h3>Twitter Image</h3>
+                </div>
 
-        </div>
-        <div id="disclaimer">
-            <p>This website is designed and created solely for educational purposes only at Westcliff University. 
-                All contents are not intended for any commercial gain or use.
-            </p>
-        </div>
-    </footer>
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. 
+                    All contents are not intended for any commercial gain or use.
+                </p>
+            </div>
+        </footer>
+    <script>
+        var partnerName = ["bustour","cabinrental","campingadv","collegetours","rentalbike","tourgroup"];
+            var photos = [];
+            var fileNames = [];
+            var imageList = [];
+            var image;
+            var openList = "<li class='partner'>";
+            var closeList = "</li>";
+            
+            for (var i=0; i<6; i++){
+                partnerName.push(i+1);
+                fileNames.push("partner-" + partnerName[i]);
+                photos.push("<img src='content/partners/"+fileNames[i]+".png'>");
+                image = openList + photos[i] + closeList;
+                imageList.push(image);
+            }
+            document.getElementById("partners").innerHTML = imageList;
+    </script>
+
+    </body>
 </html>
