@@ -308,13 +308,17 @@
         width: 500px;
         height: 200px;
     }
-    input[type="submit"]{
-        display:block;
-        margin: 15px 0 25px 400px;
-        width: 100px;
-        align-content: right;
-        background-color: #4977D1;
-        color: #fff;
 
+    form .button input{
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+         /*background-color: #4977D1;*/
+        border: none;
+        align-content: right;
     }
+
+
 

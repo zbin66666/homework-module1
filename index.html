@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Embeded Style -->
         <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body id="home">
     
@@ -92,82 +93,8 @@
                 </div>
             </footer>
         </div>
-        <script>
-            function currentTime(){
-                var d = new Date();
-                var hr = d.getHours();
-                var min = d.getMinutes();
-                var sec = d.getSeconds();
-                var ampm;
-                var hh = d.getHours();//This is for Time zone//
-                var utchr = d.getUTCHours();  
-                var timeDiff;
-                var adjTimeDiff;
-                var timeZone;
-            
-            if (sec < 10) {
-                sec = "0" + sec;
-            
-            }
-            if (min < 10) {
-                min = "0" + min;
-            }
-            if (hr == 12){
-                ampm = "pm";
-            }else if (hr > 12){
-                hr -= 12;
-                ampm = "PM";
-            } else {
-                ampm="AM";
-            } 
-            
-            var timeDiff = utchr - hh;
-            if (timeDiff > 0){
-                adjTimeDiff == timeDiff;
-            }else {
-                adjTimeDiff ==  0 - timeDiff;
-            }
-            if (adjTimeDiff = 7){
-                timeZone = "PT";
-            } else if ( adjTimeDiff = 8 ){
-                timeZone = "MT";
-            } else if ( adjTimeDiff = 9){
-                timeZone= "CT";
-            } else {
-                timeZone= "ET";
-            }
-            
-            
-            
-            var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-            
-            document.getElementById("clock").innerText = time;
-            
-            setInterval(currentTime, 1000); 
-            }
-            
-            currentTime();
-
-            var partnerName = ["bustour","cabinrental","campingadv","collegetours","rentalbike","tourgroup"];
-            var photos = [];
-            var fileNames = [];
-            var imageList = [];
-            var image;
-            var openList = "<li class='partner'>";
-            var closeList = "</li>";
-            
-            for (var i=0; i<6; i++){
-                partnerName.push(i+1);
-                fileNames.push("partner-" + partnerName[i]);
-                photos.push("<img src='content/partners/"+fileNames[i]+".png'>");
-                image = openList + photos[i] + closeList;
-                imageList.push(image);
-            }
-            document.getElementById("partners").innerHTML = imageList;
-
-        </script>
-        
-        </script>
+    <script src="js/digclock.js"></script>
+    <script src="js/site_scripts.js"></script>
     </body>
     
 </html>
