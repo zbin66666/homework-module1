@@ -9,7 +9,7 @@
         
     </head>
     
-    <body id="contact">
+    <body id="contact" onLoad="disableButton(true)">
         <div id="container">
             <header>
                 <div class="main-header">
@@ -81,7 +81,7 @@
                     <!--Random Codes-->
                     <div class ="randomcode">
                         <input type="text" name="randomcode" placeholder="Enter characters">
-                        <p id ="codes"></p>
+                        <span id ="codes"></span>
                     </div>
                     <div class="button">
                         <input type="submit" id="submit" value="Inquire">
@@ -133,8 +133,8 @@
             </div>
         </footer>
 
-    <script src="js/randomcodes.js"></script>
     <script src="js/site_scripts.js"></script>
+    <script src="js/randomcodes.js"></script>
 
     </body>
 </html>

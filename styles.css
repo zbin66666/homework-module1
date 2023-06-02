@@ -261,6 +261,9 @@
     span:first-child{
         font-weight: bold;
     }
+
+    /* Contact */
+
     form{
         padding: 0px 30px 30px 15px ;
         
@@ -280,7 +283,7 @@
         font-weight: bold;
 
     }
-    input{
+    input[type=text]{
         width: 500px;
     }
     .radios {
@@ -292,15 +295,15 @@
         display: block;
         margin: 15px 0 0 0;
     }
-    input[type="radio"]{
+    .radios input[type="radio"]{
         width: 25px;
     }
-    select{
-        width: 150px;
-        text-align: center;
+    .selectmenu{
+        width: 1500px;
+        text-align:light;
     }
 
-    .commentbox label{
+    form .commentbox label{
         display: block;
         margin: 15px 0 0 0;
     }
@@ -308,6 +311,23 @@
         width: 500px;
         height: 200px;
     }
+    form .randomcode {
+        display:block;
+        padding: 10px 0 ;
+        margin: 20px 0 20px 280px;
+
+    }
+    form .randomcode input[type="text"]{
+        width: 8em;
+       
+    }
+
+    form .randomcode span{
+        background-color: rgba(138, 137, 137, 0.449);
+        padding: 10px 5px;
+        margin-left: 10px;
+    }
+
 
     form .button input{
         width: 8em;
@@ -317,8 +337,9 @@
         color: #fff;
          /*background-color: #4977D1;*/
         border: none;
-        align-content: right;
+        margin-left:350px;
     }
 
+    
 
 

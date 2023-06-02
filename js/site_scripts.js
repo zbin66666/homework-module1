@@ -15,3 +15,13 @@
         imageList.push(image);
     }
     document.getElementById("partners").innerHTML = imageList;
+
+
+    /*RANDOM CODES*/
+        //function to generate combination of characters
+        var code = ' '; //initailize to null value
+        var getCode = ' '; //to store entered code
+        var btnvalue; // for buton boolean value 
+        var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz0123456789@#$'; 
+
+    
