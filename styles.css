@@ -210,6 +210,12 @@
         margin-top: 20px;
     }
 
+    .selected {
+        background-color: yellow;
+    }
+
+
+
 
 
     /*Activities*/
